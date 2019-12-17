@@ -1,16 +1,30 @@
-<h1 class='center'>les Kheys</h1>
+<h1 class='center'>Liste des Héros</h1>
 <div class='container'>
-<div class="row">
+  <div  class="row">
     <div *ngFor='let hero of heroes' class="col s6 m4">
-            <div class="card horizontal">
-              <div class="card-image">
-                <img [src]="hero.picture">
-                </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>{{ pokemon.name }}</p>
-                  
-                </div>
-              </div>
-            </div>
+      <div class="card horizontal" 
+      
+        
+     
+      heroBorderCard
+      (click)="selectHero(hero)">  
+        <div class="card-image">
+          <img [src]="hero.picture">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p class="heroName">{{ hero.name | uppercase }}</p>Skill :
+            <span class='{{hero.skill | heroSkillColor}}'> {{ hero.skill }}</span>
+            <br>
+            <span *ngFor="let type of hero.types"
+            class='{{ type | heroTypeColor }}'>{{ type }}</span>
           </div>
+        </div>
+      
+    </div>
+    </div>
+  </div>
+</div>
+          
+
+         

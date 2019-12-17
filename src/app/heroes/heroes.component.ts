@@ -1,19 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from './heroes';
+import { Router, Params } from '@angular/router';
 import { HEROES } from './mock-heroes.component';
+import { Hero } from './heroes';
+
+
 
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
+  
 })
 export class HeroesComponent implements OnInit {
 
-    heroes = HEROES;
+  heroes = HEROES;
 
-  constructor() { }
+  constructor(
+   private routeur: Router) { }
 
   ngOnInit() {
   }
+
+  selectHero(hero:Hero) : void{
+    
+    let link = ['/heroes', hero.id];
+     console.log(hero.id);
+     console.log(link);
+     this.routeur.navigate(link);
+
+ }
+
+
+
 
 }

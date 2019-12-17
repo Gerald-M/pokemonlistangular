@@ -1,0 +1,37 @@
+
+
+<div *ngIf="hero" class="row">
+        <div class="col s12 m8 offset-m2">
+        <h2 class="header center">{{ hero.name }}</h2>
+        <div class="card horizontal hoverable">
+          <div class="card-image">
+            <img [src]="hero.picture">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <table class="bordered striped">
+                <tbody>
+                  <tr>
+                    <td>Nom</td>
+                    <td><strong>{{ hero.name}}</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Skill</td>
+                    <td><strong>{{ hero.skill }}</strong></td>
+                  </tr>
+                  <tr>
+                     <td>Types</td>
+                     <td>
+                      <span *ngFor="let type of hero.types" class="{{ type | heroTypeColor }}">{{ type }}</span>
+                     </td>
+                  </tr>
+                 </tbody>
+              </table>
+            </div>
+            <div class="card-action">
+                <a (click)="goBack()" class="waves-effect wave-light btn">Retour</a>
+            </div>
+          </div>
+        </div>
+        </div>
+ 
