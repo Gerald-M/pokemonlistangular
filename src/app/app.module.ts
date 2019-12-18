@@ -10,6 +10,7 @@ import { HeroBorderCardDirective } from './hero-border-card.directive';
 import { HeroSkillColorPipe } from './hero-skill-color.pipe';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroCardTypeBgPipe } from './hero-card-type-bg.pipe';
+import { PageNotFoundComponent } from './heroes/page-not-found.component';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { HeroCardTypeBgPipe } from './hero-card-type-bg.pipe';
     HeroSkillColorPipe,
     HeroDetailComponent,
     HeroCardTypeBgPipe,
-      
+    PageNotFoundComponent,  
   ],
   imports: [
     BrowserModule,
