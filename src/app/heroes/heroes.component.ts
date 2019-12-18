@@ -14,6 +14,8 @@ import { Hero } from './heroes';
 export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
+  hero = Hero;
+  
 
   constructor(
    private routeur: Router) { }
@@ -30,6 +32,7 @@ export class HeroesComponent implements OnInit {
 
  }
 
+  
 
 
 

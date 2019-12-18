@@ -17,12 +17,11 @@ export class HeroBorderCardDirective {
 		this.setHeight(this.defaultHeight);
 	}
 
-@Input('pkmnBorderCard') borderColor: string;//alias
+@Input('heroBorderCard') borderColor: string;//alias
 
 @HostListener('mouseenter') onMouseEnter() {
     this.setBorder(this.borderColor || this.defaultColor);
-   
-}
+   }
 
 @HostListener('mouseleave') onMouseLeave() {
     this.setBorder(this.initialColor);
