@@ -32,15 +32,58 @@
     font-weight:bold;
 }
 
-.cardbg{
-    background: linear-gradient(0.40turn, #D1E9F1, #D5E7EC, #EDF2F4);
+.Feu{
+    background: linear-gradient(0.40turn, #e7e0db, #ac1010, #EDF2F4);
+}
+
+.Eau{
+    background: linear-gradient(0.40turn, #e7e0db, #33ffe6, #EDF2F4);
+}
+
+.Plante{
+    background: linear-gradient(0.40turn, #e7e0db, #55bf60, #EDF2F4);
+}
+
+.Roche{
+    background: linear-gradient(0.40turn, #e7e0db, #543f3a, #EDF2F4);
+}
+
+.Combat{
+    background: linear-gradient(0.40turn, #e7e0db, #925006, #EDF2F4);
+}
+
+.Normal{
+    background: linear-gradient(0.40turn, #e7e0db, #e7d2ba, #EDF2F4);
 }
 
 .Dragon{
     background: linear-gradient(0.40turn, #e7e0db, #ff7e33, #EDF2F4);
 }
 
-.Eau{
-    background: linear-gradient(0.40turn, #e7e0db, #33ffe6, #EDF2F4);
+.Vol{
+    background: linear-gradient(0.40turn, #e7e0db, #7a6761, #EDF2F4);
 }
+
+.Terre{
+    background: linear-gradient(0.40turn, #e7e0db, #925006, #EDF2F4);
+}
+
+.Poison{
+    background: linear-gradient(0.40turn, #e7e0db, #8129a7, #EDF2F4);
+}
+
+.Insecte{
+    background: linear-gradient(0.40turn, #e7e0db, #22a234, #EDF2F4);
+}
+
+.Fée{
+    background: linear-gradient(0.40turn, #e7e0db, #e57769, #EDF2F4);
+}
+
+.Electrique{
+    background: linear-gradient(0.40turn, #e7e0db, #eeda0b, #EDF2F4);
+}
+
+
+
 

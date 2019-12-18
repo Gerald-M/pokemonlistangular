@@ -12,8 +12,8 @@ export const HEROES: Hero[] = [
         id: 2,
         name: "K",
         skill: 85,
-        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/060.png",
-        types:['Eau','Vol',],
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png",
+        types:['Feu','Vol',],
     },
     {
         id: 3,
@@ -33,8 +33,8 @@ export const HEROES: Hero[] = [
         id: 5,
         name: "Aurel",
         skill: 58,
-        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/067.png",
-        types:['Combat'],
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png",
+        types:['Insecte'],
     },
     { 
         id: 6,
@@ -47,8 +47,8 @@ export const HEROES: Hero[] = [
         id: 7,
         name: "Niko",
         skill: 82,
-        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/160.png",
-        types:['Eau'],
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/172.png",
+        types:['Electrique'],
     },
     {
         id: 8,
@@ -63,6 +63,27 @@ export const HEROES: Hero[] = [
         skill: 75,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/143.png",
         types:['Normal'],
+    },
+    {
+        id: 10,
+        name: "Arturito",
+        skill: 92,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/075.png",
+        types:['Roche'],
+    },
+    {
+        id: 11,
+        name: "Triopikeur",
+        skill: 92,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/051.png",
+        types:['Terre'],
+    },
+    {
+        id: 2,
+        name: "Xis",
+        skill: 92,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/048.png",
+        types:['Poison'],
     },
    
 
