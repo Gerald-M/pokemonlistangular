@@ -2,12 +2,9 @@
 <div class='container'>
   <div  class="row">
     <div *ngFor='let hero of heroes' class="col s6 m4">
-      <div class="card horizontal" 
-      
-        
-     
-      heroBorderCard
-      (click)="selectHero(hero)">  
+      <div class="card horizontal {{hero.types[0]}}" 
+        heroBorderCard
+        (click)="selectHero(hero)">  
         <div class="card-image">
           <img [src]="hero.picture">
         </div>

@@ -13,7 +13,7 @@ export const HEROES: Hero[] = [
         name: "K",
         skill: 85,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/060.png",
-        types:['Feu','Vol',],
+        types:['Eau','Vol',],
     },
     {
         id: 3,
