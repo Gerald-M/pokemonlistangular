@@ -5,6 +5,7 @@ import { Hero } from './heroes';
 
 
 
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -29,11 +30,6 @@ export class HeroesComponent implements OnInit {
      console.log(hero.id);
      console.log(link);
      this.routeur.navigate(link);
-
  }
-
+  }
   
-
-
-
-}

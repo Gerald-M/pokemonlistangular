@@ -1,10 +1,14 @@
+
 <h1 class='center'>Liste des Héros</h1>
 <div class='container'>
   <div  class="row">
     <div *ngFor='let hero of heroes' class="col s6 m4">
-      <div class="card horizontal {{hero.types[0]}}" 
+      <div class="card horizontal" 
         heroBorderCard
+        [style.background]="'linear-gradient(0.40turn,#ffff, #45ca2d)'"
         (click)="selectHero(hero)">  
+        
+       
         <div class="card-image">
           <img [src]="hero.picture">
         </div>
@@ -17,11 +21,13 @@
             class='{{ type | heroTypeColor }}'>{{ type }}</span>
           </div>
         </div>
-      
     </div>
+    
     </div>
   </div>
 </div>
+
+
           
 
          
