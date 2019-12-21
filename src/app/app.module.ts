@@ -4,9 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-import { HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
-
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroTypeColorPipe } from './hero-type-color.pipe';
@@ -31,8 +28,6 @@ import { PageNotFoundComponent } from './heroes/page-not-found.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,{dataEncapsulation:false}),
-    InMemoryDataService,
     AppRoutingModule
   ],
   providers: [],

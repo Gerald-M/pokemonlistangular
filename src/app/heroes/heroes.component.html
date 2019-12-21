@@ -5,10 +5,8 @@
     <div *ngFor='let hero of heroes' class="col s6 m4">
       <div class="card horizontal" 
         heroBorderCard
-        [style.background]="'linear-gradient(0.40turn,#ffff, #45ca2d)'"
-        (click)="selectHero(hero)">  
-        
-       
+        [style.background]="'linear-gradient(0.40turn,'hero.getCssClasses()')'"
+        (click)="selectHero(hero)">{{hero.getCssClasses()}}
         <div class="card-image">
           <img [src]="hero.picture">
         </div>

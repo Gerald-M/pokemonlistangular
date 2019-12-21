@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, Params } from '@angular/router';
 import { HEROES } from './mock-heroes.component';
 import { Hero } from './heroes';
+import { HeroService } from '../hero.service';
 
 
 
@@ -19,9 +20,10 @@ export class HeroesComponent implements OnInit {
   
 
   constructor(
-   private routeur: Router) { }
+   private routeur: Router, heroService: HeroService) { }
 
   ngOnInit() {
+    
   }
 
   selectHero(hero:Hero) : void{
