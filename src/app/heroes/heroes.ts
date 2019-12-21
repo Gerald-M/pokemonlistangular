@@ -13,61 +13,29 @@ export class Hero {
         this.types = types;
     }
 
-    
-    public getCssClasses() {
-        var firstCss = this.types[0];
-        var secondCss = this.types[1];
-        // Si le pkmn a qu'un type
-        if (this.types.length == 1) {
-            secondCss = "#FFFF";
-            console.log("1st Css " + firstCss + "2nd Css " + secondCss);
-            switch(firstCss) {
-                case 'Dragon':
-                    firstCss = '#ff7e3388';
-                    break;
-                case 'Feu':
-                    firstCss = '#ac101088';
-                    break;
-                case 'Eau':
-                    firstCss = '#33ffe688';
-                    break;
-                default:
-                    firstCss = '#ffff'  ;
-                    break;  
-            }
-            return{firstCss};
-        }
-        // Si le pkmn a plus de 1 (ici 2 max)
-        else {
-            // Premier Swtich pour le type[0] <> firstCss
-            switch(firstCss) {
-                case 'Dragon':
-                    firstCss = '#ff7e3388';
-                    break;
-                case 'Feu':
-                    firstCss = '#ac101088';
-                    break;
-                case 'Eau':
-                    firstCss = '#33ffe688';
-                    break;
-            }
-            // Second switch pour le type[1] <> secondCss
-            switch(secondCss) {
-                case 'Dragon':
-                    secondCss = '#ff7e3388';
-                    break;
-                case 'Feu':
-                    secondCss = '#ac101088';
-                    break;
-                case 'Eau':
-                    secondCss = '#33ffe688';
-                    break;
-            }
-            // On renvoie la valeur des 2 var firstCss et secondCss pour le [style.background]
-            return{firstCss, secondCss};
-        }
-    }
 
-       
-    
+    public getCssClasses() {
+        const firstType = this.types[0];
+        const secondType = this.types[1];
+        return  [this.typeToColor(firstType), (this.types.length==1) ? '#FFF' : this.typeToColor(secondType)];  
+    }    
+
+    typeToColor(type) {
+        let color;
+        switch (type) {
+            case 'Dragon':
+                color = '#ff7e3388';
+                break;
+            case 'Feu':
+                color = '#ac101088';
+                break;
+            case 'Eau':
+                color = '#33ffe688';
+                break;
+            default:
+                color = '#ffff';
+                break;
+        }
+        return color;
+    }
 }

@@ -31,7 +31,7 @@ import { PageNotFoundComponent } from './heroes/page-not-found.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemorydataService,{dataEncapsulation:false}),
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,{dataEncapsulation:false}),
     InMemoryDataService,
     AppRoutingModule
   ],
