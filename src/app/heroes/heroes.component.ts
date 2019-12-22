@@ -17,7 +17,7 @@ export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
   hero = Hero;
-  
+  color="#ed4584";
 
   constructor(
    private routeur: Router, heroService: HeroService) { }
