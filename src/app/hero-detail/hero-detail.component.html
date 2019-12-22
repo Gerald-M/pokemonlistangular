@@ -1,9 +1,9 @@
 
 
 <div *ngIf="hero" class="row">
-        <div class="col s12 m8 offset-m2">
+        <div class="col s12 m8 offset-m2" >
         <h2 class="header center">{{ hero.name }}</h2>
-        <div class="card horizontal hoverable">
+        <div class="card horizontal hoverable" [style.background]="'linear-gradient(0.40turn,'+hero.getCssClasses()+')'">
           <div class="card-image">
             <img [src]="hero.picture">
           </div>
