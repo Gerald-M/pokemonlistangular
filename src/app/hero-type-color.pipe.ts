@@ -13,6 +13,9 @@ export class HeroTypeColorPipe implements PipeTransform {
     case 'Feu':
       color = 'red lighten-1';
       break;
+      case 'Glace':
+      color = 'blue lighten-2';
+      break;
     case 'Eau':
       color = 'blue lighten-1';
       break;
@@ -32,7 +35,7 @@ export class HeroTypeColorPipe implements PipeTransform {
       color = 'orange lighten-1';
       break;
     case 'Vol':
-     color = 'grey lighten-1';
+     color = 'grey lighten-2';
      break;
     case 'Terre':
      color = 'brown lighten-1';
@@ -48,6 +51,12 @@ export class HeroTypeColorPipe implements PipeTransform {
      break;
      case 'Insecte':
      color = 'green lighten-2';
+     break;
+     case 'Ténèbres':
+     color = 'brown lighten-2';
+     break;
+     case 'Spectre':
+     color = 'purple lighten-2';
      break;
     
     

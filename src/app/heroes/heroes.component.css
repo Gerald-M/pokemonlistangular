@@ -27,97 +27,12 @@
     font-weight:100;
 }
 
+
+
 .heroName{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:bold;
 }
-
-.Feu{
-    background: linear-gradient(0.40turn, #e7e0db88, #ac101088, #EDF2F488);
-    
-}
-
-.Eau{
-    background: linear-gradient(0.40turn, #e7e0db88, #33ffe688, #EDF2F488);
-    
-}
-
-.Plante{
-    background: linear-gradient(0.40turn, #e7e0db88, #55bf6088, #EDF2F488);
-       
-}
-.PlanteG{
-    background: linear-gradient(0.40turn, #45ca2d, #FFFF);  
-    opacity: 0.1; 
-       
-}
-
-.PlanteD{
-    background: linear-gradient(0.40turn, #FFFF, #45ca2d);   
-    
-}
-
-.PoisonG{
-    background: linear-gradient(0.40turn, #8129a788, #FFFF);
-    opacity: 0.5; 
-    
-}
-.PoisonD{
-    background: linear-gradient(0.40turn, #ffff, #8129a788);
-    opacity: 0.9; 
-}
-
-.Roche{
-    background: linear-gradient(0.40turn, #e7e0db88, #543f3a88, #EDF2F488);
-    
-}
-
-.Combat{
-    background: linear-gradient(0.40turn, #e7e0db88, #92500688, #EDF2F488);
-    
-}
-
-.Normal{
-    background: linear-gradient(0.40turn, #e7e0db88, #e7d2ba88, #EDF2F488);
-    
-}
-
-.Dragon{
-    background: linear-gradient(0.40turn, #e7e0db88, #ff7e3388, #EDF2F488);
-    
-}
-
-.Vol{
-    background: linear-gradient(0.40turn, #e7e0db88, #7a676188, #EDF2F488);
-    
-}
-
-.Terre{
-    background: linear-gradient(0.40turn, #e7e0db88, #92500688, #EDF2F488);
-    
-}
-
-.Poison{
-    background: linear-gradient(0.40turn, #e7e0db88, #8129a788, #EDF2F488);
-    
-}
-
-
-.Insecte{
-    background: linear-gradient(0.40turn, #e7e0db88, #22a23488, #EDF2F488);
-    
-}
-
-.Fée{
-    background: linear-gradient(0.40turn, #e7e0db88, #e5776988, #EDF2F488);
-    
-}
-
-.Electrique{
-    background: linear-gradient(0.40turn, #e7e0db88, #eeda0b88, #EDF2F488);
-    
-}
-
 
 
 

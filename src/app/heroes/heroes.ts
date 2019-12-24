@@ -29,6 +29,12 @@ export class Hero {
             case 'Plante':
                 color = '#45ca2d';
                 break;
+            case 'Ténèbres':
+                color = '#7c6259';
+                break;
+            case 'Spectre':
+                color = '#603f74';
+                break;
             case 'Poison':
                 color = '#702dca';
                 break;
@@ -48,7 +54,10 @@ export class Hero {
                 color = '#dfd4a2';
                 break;
             case 'Eau':
-                color = '#33ffe6';
+                color = '#2483e1';
+                break;
+            case 'Glace':
+                color = '#ace5e9';
                 break;
             case 'Roche':
                 color = '#56523e';
