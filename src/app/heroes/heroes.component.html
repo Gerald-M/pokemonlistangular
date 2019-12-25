@@ -1,12 +1,10 @@
-
 <h1 class='center'>Liste des Héros</h1>
 <div class='container'>
-  <div  class="row">
+  <div class="row">
     <div *ngFor='let hero of heroes' class="col s6 m4">
-      <div class="card horizontal" 
-        heroBorderCard
-        [style.background]="'linear-gradient(0.40turn,'+hero.getCssClasses()+')'"
-        (click)="selectHero(hero)">
+            <div class="card horizontal" heroBorderCard
+            [style.background]="'linear-gradient(0.40turn,'+hero.getCssClasses()+')'" 
+       (click)="selectHero(hero)">
         <div class="card-image">
           <img [src]="hero.picture">
         </div>
@@ -15,17 +13,11 @@
             <p class="heroName">{{ hero.name | uppercase }}</p>Skill :
             <span class='{{hero.skill | heroSkillColor}}'> {{ hero.skill }}</span>
             <br>
-            <span *ngFor="let type of hero.types"
-            class='{{ type | heroTypeColor }}'>{{ type }}</span>
+            <span *ngFor="let type of hero.types" class='{{ type | heroTypeColor }}'>{{ type }}</span>
           </div>
         </div>
-    </div>
-    
+      </div>
+
     </div>
   </div>
 </div>
-
-
-          
-
-         

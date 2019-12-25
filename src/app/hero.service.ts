@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
+import { Hero } from './heroes/heroes';
+import { HEROES} from './heroes/mock-heroes.component';
+
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { Hero } from './heroes/heroes';
-import { HEROES} from './heroes/mock-heroes.component';
-
-
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class HeroService {
 
   constructor(private http: HttpClient) { }
@@ -33,7 +34,7 @@ export class HeroService {
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl).pipe(
       tap(_ => this.log(`fetched heroes`)),
-      catchError(this.handleError(`getPokemons`, []))
+      catchError(this.handleError(`getHeroes`, []))
     );
   }
 

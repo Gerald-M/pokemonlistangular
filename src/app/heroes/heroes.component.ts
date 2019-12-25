@@ -11,27 +11,34 @@ import { HeroService } from '../hero.service';
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
-  
+
 })
 export class HeroesComponent implements OnInit {
 
-  heroes = HEROES;
+  heroes: Hero[] = [];
   hero = Hero;
-  color="#ed4584";
 
   constructor(
-   private routeur: Router, heroService: HeroService) { }
+    private routeur: Router, private heroService: HeroService) { }
 
-  ngOnInit() {
-    
+  ngOnInit(): void {
+    this.getHeroes();
   }
 
-  selectHero(hero:Hero) : void{
-    
+  getHeroes(): void {
+    this.heroService.getHeroes()
+      .subscribe(heroes => {
+        this.heroes = [];
+        heroes.forEach(hero => this.heroes.push(hero));
+      });
+  }
+
+
+  selectHero(hero: Hero): void {
+
     let link = ['/heroes', hero.id];
-     console.log(hero.id);
-     console.log(link);
-     this.routeur.navigate(link);
- }
+    console.log(hero.id);
+    console.log(link);
+    this.routeur.navigate(link);
   }
-  
+}
