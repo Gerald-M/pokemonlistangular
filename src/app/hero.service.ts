@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Hero } from './heroes/heroes';
-import { HEROES} from './heroes/mock-heroes.component';
+import { HEROES } from './heroes/mock-heroes.component';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
@@ -17,7 +17,7 @@ export class HeroService {
 
   private heroesUrl = 'api/heroes';
 
-  private log(log: string) {
+    private log(log: string) {
     console.info(log);
   }
 
@@ -46,6 +46,20 @@ export class HeroService {
       catchError(this.handleError<Hero>(`getHero id=${id}`))
     );
   }
+
+  deleteHeroes(hero: Hero): Observable<Hero> {
+    const url = `${this.heroesUrl}/${hero.id}`;
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+
+    return this.http.delete<Hero>(url, httpOptions).pipe(
+      tap(_ => this.log(`deleted hero id=${hero.id}`)),
+      catchError(this.handleError<any>(`deleteHero`))
+    )
+  }
+
+  
 
 
 

@@ -15,8 +15,8 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes: Hero[] = [];
-  hero = Hero;
+  heroes : Hero[];
+  hero:Hero;
 
   constructor(
     private routeur: Router, private heroService: HeroService) { }
@@ -27,10 +27,7 @@ export class HeroesComponent implements OnInit {
 
   getHeroes(): void {
     this.heroService.getHeroes()
-      .subscribe(heroes => {
-        this.heroes = [];
-        heroes.forEach(hero => this.heroes.push(hero));
-      });
+    .subscribe(heroes => this.heroes = heroes);;
   }
 
 
