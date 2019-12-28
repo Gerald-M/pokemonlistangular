@@ -2,6 +2,7 @@
   "name": "angular-reroll-test",
   "version": "0.0.0",
   "scripts": {
+    "start": "node server.js",
     "ng": "ng",
     "startDev": "ng serve",
     "build": "ng build",
